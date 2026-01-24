@@ -1,25 +1,25 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# In[1]:
+# In[31]:
 
 
 import pandas as pd
 
 
-# In[2]:
+# In[32]:
 
 
 df=pd.read_csv("deneme1.csv",sep=";")
 
 
-# In[3]:
+# In[33]:
 
 
 df
 
 
-# In[4]:
+# In[34]:
 
 
 students=[
@@ -28,19 +28,19 @@ students=[
 ]
 
 
-# In[5]:
+# In[35]:
 
 
 df=pd.DataFrame(students)
 
 
-# In[6]:
+# In[36]:
 
 
 df
 
 
-# In[7]:
+# In[37]:
 
 
 students={
@@ -50,118 +50,124 @@ students={
 }
 
 
-# In[8]:
+# In[38]:
 
 
 df=pd.DataFrame(students)
 
 
-# In[9]:
+# In[39]:
 
 
 df
 
 
-# In[10]:
+# In[40]:
 
 
 df['surname']
 
 
-# In[11]:
+# In[41]:
 
 
 type(df['surname'])
 
 
-# In[12]:
+# In[42]:
 
 
 df[['name','surname']]
 
 
-# In[13]:
+# In[43]:
 
 
 df.columns
 
 
-# In[14]:
+# In[44]:
 
 
 list(df.columns)
 
 
-# In[15]:
+# In[45]:
 
 
 df.columns.tolist()
 
 
-# In[18]:
+# In[46]:
 
 
 df['email']
 
 
-# In[19]:
+# In[47]:
 
 
 df.index
 
 
-# In[20]:
+# In[48]:
 
 
 df.iloc[1]
 
 
-# In[21]:
+# In[49]:
 
 
 df.iloc[2]['name']
 
 
-# In[22]:
+# In[50]:
 
 
 df.loc[1]
 
 
-# In[25]:
+# In[55]:
 
 
 df.index=df.index+5
 
 
-# In[26]:
+# In[56]:
 
 
 df
 
 
-# In[27]:
+# In[52]:
 
 
 df.iloc[1]
 
 
-# In[28]:
+# In[53]:
 
 
 df.loc[1]
 
 
-# In[29]:
+# In[62]:
 
 
 df.loc[10]
 
 
-# In[30]:
+# In[61]:
 
 
 df.shape
+
+
+# In[60]:
+
+
+df.loc[11]
 
 
 # In[ ]:
